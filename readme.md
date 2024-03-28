@@ -33,9 +33,9 @@ This Flask application provides APIs for user registration, retrieving user info
    flask db upgrade; flask db migrate;
    ```
 
-5. **Custom Plans**: Run the script `add_custom_plans.py` to add custom plans to the database:
+5. **Custom Plans**: Run the script `plan_seed.py` to add custom plans to the database:
    ```
-   python add_custom_plans.py
+   python core/user/plan_seed.py
    ```
 
 ## Usage

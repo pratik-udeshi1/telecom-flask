@@ -1,6 +1,5 @@
-# Assuming you have already defined your Flask app, SQLAlchemy db, and Plan model
 from app import app
-from core.user.models import Plan, db, User
+from core.user.models import Plan, db
 
 
 # Create and add custom plan entries
@@ -25,7 +24,7 @@ def add_custom_plans():
 def check_and_add_plans():
     all_plans = Plan.query.all()
 
-    if not Plan.query.all():
+    if not all_plans:
         add_custom_plans()
 
 
